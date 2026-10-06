@@ -8,4 +8,4 @@ const num2 = 10;
 const sum = num1 + num2;
 
 // Output the result
-console.log("The sum is:", sum); 
+console.log("The sum is:", sum)

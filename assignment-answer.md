@@ -43,5 +43,5 @@ someone without internet access  (  Input: age = 21 score = 85 hasLaptop = true 
 someone with an incomplete application  (  Input: age = 21 score = 85 hasLaptop = true hasInternet = true completedApplication = false Expected result: Not eligible Actual result: Not eligible )
 someone without laptop access  (  Input: age = 21 score =  85 hasLaptop = false hasInternet = true completedApplication = true Expected result: Not eligible Actual result: Not eligible )
 someone aged exactly 18  (  Input: age = 18 score = 62 hasLaptop = true hasInternet = true completedApplication = true Expected result: Eligible Actual result: Eligible )
-someone scoring exactly 60  (  Input: age = 21 score = 60 hasLaptop = true hasInternet = true completedApplication = true Expected result: Not eligible Actual result: Not eligible )
+someone scoring exactly 60  (  Input: age = 21 score = 60 hasLaptop = true hasInternet = true completedApplication = true Expected result: Eligible Actual result: Eligible )
 one priority candidate  (  Input: age = 21 score = 96 hasLaptop = true hasInternet = true completedApplication = true Expected result: Priority candidate Actual result: Priority candidate )

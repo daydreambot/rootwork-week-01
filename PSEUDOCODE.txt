@@ -1,0 +1,20 @@
+DEFINE CONSTANT age = 21
+DEFINE CONSTANT score = 78
+DEFINE CONSTANT hasLaptop = TRUE
+DEFINE CONSTANT hasInternet = TRUE
+DEFINE CONSTANT completedApplication = TRUE
+
+IF age >= 18 AND score >= 85 AND 
+hasLaptop IS TRUE AND 
+hasInternet IS TRUE AND 
+completedApplication IS TRUE THEN
+    PRINT "Priority candidate"
+ELSE IF age >= 18 AND 
+score >= 60 AND 
+hasLaptop IS TRUE AND 
+hasInternet IS TRUE AND 
+completedApplication IS TRUE THEN
+    PRINT "Eligible"
+ELSE
+    PRINT "Not eligible"
+END

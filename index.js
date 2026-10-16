@@ -1,14 +1,22 @@
-const name = "Iyiola Eniola" ; console.log(`Hello Rootwork, my name is ${name}.`)
+const age = 21;
+const score = 85;
+const hasLaptop = false;
+const hasInternet = true;
+const completedApplication = true;
 
-//A script to add to add two numbers
-const num1 = 5;
-const num2 = 10;
-
-// Add the numbers
-const sum = num1 + num2;
-
-// Output the result
-console.log("The sum is:", sum)
-
-// a new constant
-const num3 = 20
+if (age >= 18 &&
+    score >= 85 &&
+    hasLaptop &&
+    hasInternet &&
+    completedApplication) {
+    console.log("Priority candidate");
+} else if (age >= 18 &&
+    score >= 60 &&
+    hasLaptop &&
+    hasInternet &&
+    completedApplication
+) {
+    console.log("Eligible");
+} else {
+    console.log("Not eligible");
+}

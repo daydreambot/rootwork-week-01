@@ -71,4 +71,12 @@ fruits.shift()
 console.log(fruits)
 
 
+// BRIEF EXPLANATION
+//1.  Arrays are useful because they let you store multiple values inside one variable
 
+//2.  Loops and array work well together because a loop allows you to move 
+// through each items in an arrays one by one without writing a code for each one
+
+//3. The thing that confused me was using the if statement inside the for loop and getting
+// the terminal to print just the total score instead of adding and printing the current
+//  total score after every loop

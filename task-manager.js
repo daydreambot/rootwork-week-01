@@ -38,7 +38,7 @@ const tasks = [
     {
         title: "Take out the trash", 
         category: "Chores", 
-        completed: false , 
+        completed: true , 
         priority: "high"
     }
 ];
@@ -104,7 +104,7 @@ function displayHighPriorityTasks(tasks) {
             Category: ${highPriorityTask.category},
             Completed?: ${highPriorityTask.completed},
             Priority: ${highPriorityTask.priority}`);
-            let taskFound = true;
+            taskFound = true;
         }
     }
     if (!taskFound) {
@@ -124,5 +124,5 @@ function addTasks(titles, categories, priorities, completedBool) {
     tasks.push(newTask)
 }
 
-addTasks("Walk the dog", "Chores", false, "medium");
+addTasks("Walk the dog", "Chores", "medium", false);
 displayTasks(tasks);

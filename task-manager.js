@@ -2,13 +2,13 @@ const tasks = [
     {
         title: "Finish Javascript milestone", 
         category: "Education", 
-        completed: false , 
+        completed: true , 
         priority: "high" 
     }, 
     {
         title: "Buy groceries for the week",
         category: "Personal", 
-        completed: false , 
+        completed: true , 
         priority: "high"
     }, 
     {
@@ -63,15 +63,66 @@ function totalTasks(tasks) {
 
 console.log('Total Number of Tasks: ' + totalTasks(tasks));
 
-//function for completed tasks
-function displayCompletedTasks(tasks) {
-    let completedTasks = []
+//function for completed and pending tasks 
+function calculateStats(tasks) {
+    let completedTasks = [];
+    let pendingTasks = [];
+    let WorkTaskCount = 0
+    let ChoresTaskCount = 0
     for (let i = 0; i < tasks.length; i++) {
         if (tasks[i].completed) {
-            completedTasks_array.push(tasks[i])
+            completedTasks.push(tasks[i])
             }
+        if (tasks[i].completed === false) {
+            pendingTasks.push(tasks[i])
+        }
+        if (tasks[i].category === "Chores") {
+            ChoresTaskCount += 1
+        }
+        if (tasks[i].category === "Work") {
+            WorkTaskCount += 1
+        }
     }
-    console.log('Number of completed tasks: ' + completedTasks_array.length)
+    console.log('Number of completed tasks: ' + completedTasks.length)
+    console.log('Number of pending tasks: ' + pendingTasks.length)
+    console.log('Number of Work tasks: ' + WorkTaskCount)
+    console.log('Number of Chores: ' + ChoresTaskCount)
 } 
 
-displayCompletedTasks(tasks)
+calculateStats(tasks);
+
+function displayHighPriorityTasks(tasks) {
+    let taskFound = false;
+    console.log('\nUNCOMPLETED HIGH PRIORITY TASKS\n')
+
+    for (let i = 0; i < tasks.length; i++) {
+        const highPriorityTask = tasks[i];
+
+        if (highPriorityTask.priority === "high" && 
+            highPriorityTask.completed === false) {
+            console.log(`Title ${i+1}: ${highPriorityTask.title},
+            Category: ${highPriorityTask.category},
+            Completed?: ${highPriorityTask.completed},
+            Priority: ${highPriorityTask.priority}`);
+            let taskFound = true;
+        }
+    }
+    if (!taskFound) {
+        console.log('There are no uncompleted high priority tasks');
+    }
+}
+
+displayHighPriorityTasks(tasks);
+
+function addTasks(titles, categories, priorities, completedBool) {
+    const newTask = {
+        title: titles,
+        category: categories,
+        priority: priorities,
+        completed: completedBool,
+    };
+    tasks.push(newTask)
+}
+
+addTasks("Walk the dog", "Chores", false, "medium");
+displayTasks(tasks);

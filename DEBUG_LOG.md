@@ -29,4 +29,4 @@ I checked the tasks array I created and the displayTasks function to see if ther
 
  What I checked: I looked at the logic of my displayHighPriorityTasks function to see where I made a mistake
 
- The fix: I replaced the empty array I created initially to add the uncompleted high priority tasks to with a variable which is assigned the value of each object
+ The fix: I replaced the empty array I created initially to add the uncompleted high priority tasks to with a variable which is assigned the value of each object.

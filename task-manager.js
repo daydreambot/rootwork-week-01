@@ -54,4 +54,24 @@ function displayTasks(tasks) {
     }
 }
 
-console.log(displayTasks(tasks))
+displayTasks(tasks);
+
+//function for total number of tasks
+function totalTasks(tasks) {
+    return tasks.length;
+}
+
+console.log('Total Number of Tasks: ' + totalTasks(tasks));
+
+//function for completed tasks
+function displayCompletedTasks(tasks) {
+    let completedTasks = []
+    for (let i = 0; i < tasks.length; i++) {
+        if (tasks[i].completed) {
+            completedTasks_array.push(tasks[i])
+            }
+    }
+    console.log('Number of completed tasks: ' + completedTasks_array.length)
+} 
+
+displayCompletedTasks(tasks)

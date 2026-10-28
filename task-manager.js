@@ -1,6 +1,6 @@
-const asks = [
+const tasks = [
     {
-        title: "Finish Javacript milestone", 
+        title: "Finish Javascript milestone", 
         category: "Education", 
         completed: false , 
         priority: "high" 
@@ -42,3 +42,16 @@ const asks = [
         priority: "high"
     }
 ];
+
+//function to Display Tasks
+function displayTasks(tasks) {
+    for (let i = 0; i < tasks.length; i++) {
+        const currentTask = tasks[i];
+        console.log(`Title ${i+1}: ${currentTask.title},
+            Category: ${currentTask.category},
+            Completed?: ${currentTask.completed},
+            Priority: ${currentTask.priority}`);
+    }
+}
+
+console.log(displayTasks(tasks))

@@ -1,35 +1,22 @@
-# rootwork-week-01
-A rootwork repo for week 1
+## what I built
+This is a basic Developer profile webpage built using just HTML
 
+## the main sections of the website
+- Introduction
+- Skills
+- Projects
+- Education
+- Contact
 
-My name - Iyiola Eniola
+## Semantic HTML choices I made and why
+- I used header for the webpage top of the web page. This part represents the introductory part of the page and helps assistive technologies understand that clearly
+- I used main for the primary content of the webpage which contains the main sections inside the page such as Introduction, Skills, Projects, Education and Contact 
+- I used nav for the top navigation which linked to all major sections of the page. It tells the screen reader that this is a navigation area of the page
+- I used alt in the image tags because it helps communicate the image purpose when the image can not load or when using a screen reader
 
-Programming experience I currently have - I have a knowledge about various Python functions and syntax. I have created a to do list API before with help of AI but I can not really explain well.
+## one thing I found confusing or interesting while building it
+- The thing I found interesting was why some HTML tags require a closing tag and some do not. I found out that the HTML tags that require a closing tag do so because they are wrapping around texts and other elements so they act like a container that specifies where the texts or elements start and end.
+The ones that do not require a closing tag are used to insert a single standalone object.
 
-What I am currently interested in learning - Backend enginering.
-
-What I want to be able to do by the end of Rootwork - To build a able to build real life projects that may useful in any capacity to other people.
-
-
-##second task
-1. How does Brad describe a Git repository when explaining Git in simple terms? a git repository is a digital filing cabinet thats stores all files and changes you made.
-
-2. Why does he recommend learning Git from the terminal before relying on graphical tools?  It helps to better understand what is going on in the background and get more comfortable using git
-
-3. What are the four stages/locations in the Git workflow he explains, from editing your files to GitHub? 
-working directory
-staging area
-local repo
-remote repo
-
-4. What is the name of the sample project he uses during the practical demonstration? 
-task-tracker
-
-5. During the branching explanation, what example involving workouts does he use?   He added a login functionality
-6. What branch name does he later create during the practical demo? 
-task-tracker-2
-7. After merging the Pull Request on GitHub, what does he do with the remote branch? He deleted the branch
-8. When his local main does not yet contain the merged change, what does he do to bring the latest changes down? he used git pull command
-9. What kind of file does he mention should normally be placed in .gitignore, and why? sensitive files containing keys and password. This for privacy and security
-10. What platform does he use at the end of the video to demonstrate CI/CD? Vercel
-11. Mention one thing from the video that was new to you and include the approximate timestamp. Generating SSH keys 34:00
+## whether and how I used AI
+- Yes I used AI .I used it to break down the assignment information into smaller pieces I can easily understand before I write the code. I also used AI to explain to me why the article tag can not stay inside a dl tag.

@@ -1,65 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        
+        <meta charset="UTF-8">
+        <meta name="author" content="Ego">
+        <meta name="description" content="This is a webpage about a tech club">
         <title>Home</title>
     </head>
 
 <body>
 <header>
     <h1>Tech Club</h1>
-</header>
-    <nav>
+
+    <nav aria-label="Main Menu">
         <a href="#about">About</a>
         <a href="#events">Events</a>
         <a href="#join">Join</a>
     </nav>
+</header>
 
+<main>
 <h2 id="about">About Us</h2>
 <p>We are a student technology club learning how to build useful things on the web.</p>
 
-<div id="events">
-  <h1>Upcoming Events</h1>
+<section id="events">
+    <h2>Upcoming Events</h2>
 
-  <ul>
-    <article>
-      <li>
-        <h4>HTML Workshop</h4>
+<article>
+<ul>
+    
+    <li>
+        <h3>HTML Workshop</h3>
         <p>Saturday at 10am</p>
-      </li>
-    </article>
+    </li>
+    
 
-    <article>
-      <li>
-        <h2>Git Practice</h2>
+
+    <li>
+        <h3>Git Practice</h3>
         <p>Sunday at 2pm</p>
-      </li>
-    </article>
-  </ul>
-</div>
+    </li>
+
+</ul>
+</article>
+
+</section>
 
 <img src="club.jpg" alt="image">
 
-<div id="join">
-  <h4>Join the Club</h4>
+<section id="join">
+    <h2>Join the Club</h2>
 
-  <form>
-    Name:
-    <input type="text">
+    <form>
+    <label for ='user-name'>Name: </label>
+    <input type="text" id="user-name" name="user-name">
 
-    Email:
-    <input type="text">
+    <label for='user-email'> Email: </label>
+    <input type="email" id="user-email" name="user-email">
 
-    Why do you want to join?
-    <input type="text">
+    <label for="user-reason">Why do you want to join?</label>
+    <input type="text" id="user-reason" name="user-reason">
 
-    <button>Send</button>
-  </form>
-</div>
+    <button type="submit">Send</button>
+    </form>
+</section>
+</main>
 
+<footer>
 <div>
-  Tech Club 2026
+    Tech Club 2026
 </div>
+</footer>
 
 </body>
 </html>

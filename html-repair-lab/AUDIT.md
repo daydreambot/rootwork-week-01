@@ -123,5 +123,5 @@ Why: The description meta tag is what search engines often display in their sear
 
 
 ## AI usage
-I did not use AI.
+I did used AI to do the final checks to see if I missed anything after I fixed the index.html file.
 

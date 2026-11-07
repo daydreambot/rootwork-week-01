@@ -120,3 +120,8 @@ Why: If a page ends up having multiple <nav> elements , aria-label help screen r
 Problem: The original document had no useful metadata to describe the page.
 Fix: I added <meta name="author"> and <meta name="description"> tags.
 Why: The description meta tag is what search engines often display in their search results under the page link, making it essential for SEO.
+
+
+## AI usage
+I did not use AI.
+

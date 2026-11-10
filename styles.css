@@ -1,0 +1,21 @@
+:root {
+    --bg-color: #eecccc;        /* Off-white background */
+    --text-color: #000000;      /* dark gray */
+    --accent-color: #0066cc;    /* blue for links and buttons */
+
+    /* Spacing */
+    --spacing-md: 16px;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: var(--spacing-md);
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+button {
+    background-color: var(--accent-color);
+}
+

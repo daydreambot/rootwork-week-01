@@ -20,3 +20,25 @@ The ones that do not require a closing tag are used to insert a single standalon
 
 ## whether and how I used AI
 - Yes I used AI .I used it to break down the assignment information into smaller pieces I can easily understand before I write the code. I also used AI to explain to me why the article tag can not stay inside a dl tag.
+
+## ------------------------------------------------
+
+## WEEK 6 LEARNING CHECK
+
+## When would you choose Flexbox instead of Grid?
+- 
+
+## What does box-sizing: border-box change?
+- 
+
+## What is the difference between margin and padding?
+- 
+
+## What does a media query do?
+- 
+
+## Why is max-width: 100% useful for images?
+- 
+
+## Mention one CSS behaviour from the videos that initially confused you and explain how you understand it now.
+- 

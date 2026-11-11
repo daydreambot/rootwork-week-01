@@ -1,72 +1,85 @@
 :root {
-    --bg-color: #ffffff;        
-    --text-color: #378cc5;      
-    --accent-color: #0284c7; 
-    --button-color: #0066cc;
-
-
-    /* Spacing */
+    --bg-color: #ffffff;
+    --text-color: #378cc5;
+    --accent-color: #0284c7;
+    --button-color: #000000;
+    --card-border: #e5e7eb;
+    --card-gradient: linear-gradient(155deg, #7ea1e7, #1e5cda);
     --spacing-md: 16px;
 }
 
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    margin: var(--spacing-md);
-    max-width: 1000px;
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    max-width: 500px;
     margin: 20px auto;
+    padding: 0 var(--spacing-md);
     display: grid;
-    grid-template-columns: 1fr;
-    place-items: center;    
-}
-
-h1{
-    display: flex;
     justify-content: center;
+    grid-template-columns: 1fr;
+    gap: 24px;
 }
 
-#Intro {
-    color: #1f2937;
-    display: grid;    
-    place-items: center;
+header {
+    text-align: center;
 }
 
-#Skills {
-    display: grid;    
-    place-items: center;
+h1 {
+    text-align: center;
 }
 
 h2 {
     background: linear-gradient(135deg, #254d9e, #4a80e8);
-    border-color: #e5e7eb;
+    border: 2px solid var(--card-border);
+    border-radius: 8px;
     padding: 10px 20px;
-    border-style: solid; 
-    color: #1f2937;
-    display: grid;    
+    color: #ffffff;
+    margin: 0 auto 16px auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    width: 100%;
+}
+
+/* Portfolio Section Cards */
+#Intro,
+#Skills,
+#Projects,
+#Education,
+#Contact {
+    background: var(--card-gradient);
+    color: #ffffff;
+    display: grid;
+    place-items: start;
+    padding: 24px;
+    border-radius: 15px;
+    border: 2px solid #1e40af;
+}
+
+#Intro {
     place-items: center;
+    text-align: center;
 }
 
-button {
-    background-color: var(--button-color);
-    color: white
-}
-
-nav{
+/* Navigation & Links */
+nav {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
     padding: 10px 20px;
-    border-radius: 15px;
+    margin-top: 16px;
 }
 
-nav a {
-    
-}
-
-ul{
+ul {
     list-style: none;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 a {
@@ -74,25 +87,103 @@ a {
     color: var(--accent-color);
 }
 
-.circle-image {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-}
-
 .nav-border {
-    border-color: #254d9e; 
-    color: white;
+    border: 2px solid #254d9e;
+    color: #ffffff;
     padding: 10px 20px;
     border-radius: 25px;
-    border-style: solid; 
     background: linear-gradient(135deg, #254d9e, #4a80e8);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .nav-border:hover {
     background: linear-gradient(135deg, #4a80e8, #254d9e);
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(37, 77, 158, 0.4);
+}
+
+/* Profile Picture */
+.circle-image {
+    width: 300px;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    border: 3px solid #000000;
+}
+
+/* Contact Form & Links */
+form {
+    width: 100%;
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid var(--card-border);
+    border-radius: 8px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+input:focus , textarea:focus {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 2px;
+    border-color: var(--accent-color); 
+}
+
+button {
+    background-color: var(--button-color);
+    color: #ffffff;
+}
+
+button[type="submit"] {
+    background: linear-gradient(135deg, rgb(40, 42, 139), rgb(99, 102, 241));
+    color: #ffffff;
+    padding: 12px 24px;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(37, 77, 158, 0.4);
+}
+
+button[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px var(--card-border);
+}
+
+.contact-links {
+    margin-top: 20px;
+}
+
+#Contact a {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid var(--card-border);
 }

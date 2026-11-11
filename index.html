@@ -1,167 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Iyiola Eniola">
-        <meta name="description" content="This is a webpage containing my developer profile">
-        <title>
-            My Developer profile
-        </title>
-        <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="author" content="Iyiola Eniola">
+    <meta name="description" content="This is a webpage containing my developer profile">
+    <title>My Developer Profile</title>
+    <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
-        <header>
+    <header>
+            <h1>Iyiola Elijah's Developer Profile</h1>
+    <img
+        class="circle-image"
+        src="img/profile-pic.jpeg"
+        alt="Iyiola Eniola profile picture"
+        title="My profile picture"
+        width="300"
+        height="300"
+    >
+    <nav aria-label="Main navigation">
+        <a href="#Intro" class="nav-border">Introduction</a>
+        <a href="#Skills" class="nav-border">Skills</a>
+        <a href="#Projects" class="nav-border">Projects</a>
+        <a href="#Education" class="nav-border">Education</a>
+        <a href="#Contact" class="nav-border">Contact</a>
+    </nav>
+    </header>
 
-            <h1>
-                Iyiola Elijah's Developer Profile
-            </h1>
-            <img class='circle-image' src="img/profile-pic.jpeg" alt="Iyiola Eniola profile picture" title="My profile picture" width="300" height="300">
-            <nav aria-label="main-navigation">
-                <a href="#Intro" class ='nav-border'>Introduction</a>
-                <a href="#Skills" class ='nav-border'>Skills</a>
-                <a href="#Projects" class ='nav-border'>Projects</a>
-                <a href="#Education" class ='nav-border'>Education</a>
-                <a href="#Contact" class ='nav-border'>Contact</a>
-            </nav>
-            <hr>
-        </header>
+    <main>
+    <section id="Intro">
+        <h2>Introduction</h2>
+        <p>
+        Hi, my name is Iyiola Elijah, an aspiring Backend Engineer. Open to
+        internship opportunities.
+        </p>
+    </section>
 
-        <main>
-            <section id="Intro">
-                <h2>
-                    Introduction
-                </h2>
+    <section id="Skills">
+        <h2>Skills</h2>
+        <ol>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>HTML</li>
+        </ol>
+    </section>
 
-                <p>
-                    Hi, My name is Iyiola Elijah, an aspiring Backend Engineer. Open to internship opportunities.
-                </p>
-            </section>
-            
-            <hr>
-            <section id="Skills">
-                <h2>
-                    Skills
-                </h2>
-            </section>
-            <ol>
+    <section id="Projects">
+        <h2>Projects</h2>
+        <article>
+        <h3>Rootwork Task Manager</h3>
+        <p>
+            This is a terminal-based task manager built using just JavaScript.
+        </p>
+        </article>
+
+        <article>
+        <h3>Tic Tac Toe</h3>
+        <p>
+            This is a terminal-based Tic Tac Toe game using Python.
+        </p>
+        </article>
+
+        <article>
+        <h3>Password Generator</h3>
+        <p>
+            This is a Python-based password generator.
+        </p>
+        </article>
+    </section>
+
+    <section id="Education">
+        <h2>Education</h2>
+        <dl>
+        <dt>
+            Obafemi Awolowo University, Ile-Ife, Osun State, Nigeria
+        </dt>
+        <dd>
+            <strong>Bachelor of Science</strong>
+        </dd>
+        </dl>
+    </section>
+
+    <section id="Contact">
+        <h2>Contact</h2>
+        <form>
+        <label for="user-name">Name:</label>
+        <input type="text" id="user-name" name="user-name" required>
+
+        <label for="user-email">Email:</label>
+        <input type="email" id="user-email" name="user-email" required>
+
+        <label for="user-subject">Subject:</label>
+        <input type="text" id="user-subject" name="user-subject">
+
+        <label for="user-message">Message:</label>
+        <textarea
+            id="user-message"
+            name="user-message"
+            rows="6"
+            required
+        ></textarea>
+
+        <button type="submit">Submit</button>
+        </form>
+
+        <div class="contact-links">
+        <ul>
             <li>
-                Python
+            You can also contact me on
+            <a
+                href="https://github.com/daydreambot"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+            >
             </li>
             <li>
-                Javascript
+            or send me an
+            <a href="mailto:elijahiyiolaworks@gmail.com">email</a>.
             </li>
-            <li>
-                HTML
-            </li>
-            </ol>
-            <hr>
-            <section id="Projects">
-                <h2>
-                    Projects
-                </h2>
-                <article>
-                    <h3>
-                        Rootwork Task Manager
-                    </h3>
-                    
-                    <p>
-                        This is a terminal based task manager built using just Javascript.
-                    </p>
-                </article>
+        </ul>
+        </div>
+    </section>
+    </main>
 
-                <article>
-                    <h3>
-                        Tic Tac Toe
-                    </h3>
-                    
-                    <p>
-                        This is a terminal based Tic Tac Toe game using Python.
-                    </p>
-                </article>
-
-                <article>
-                    <h3>   
-                        Password Generator
-                    </h3>
-                    <p>
-                        This is a Python based password generator.
-                    </p>
-                    
-                
-                </article>
-            </section>
-            
-            
-            
-            
-            <hr>
-            <section id="Education">
-                <h2>
-                    Education
-                </h2>
-                <dl>
-                    <dt>
-                        Obafemi Awolowo University, Ile-Ife, Osun State, Nigeria
-                    </dt>
-                    <dd>
-                        <strong>Bachelor of Science</strong>
-                    </dd>
-                </dl>
-            </section>
-            <hr>
-
-            <section id="Contact">
-                <h2>
-                    Contact
-                </h2>
-
-                <form>
-                    <!-- The Name Field -->
-                    <label for="user-name">Name:</label>
-                    <input type="text" id="user-name" name="user-name">
-
-                    <br><br> 
-
-                    <!-- The Email Field -->
-                    <label for="user-email">Email:</label>
-                    <input type="email" id="user-email" name="user-email">
-                    <br><br>
-
-                    <!-- The Subject Field -->
-                    <label for="user-subject">Subject:</label>
-                    <input type="text" id="user-subject" name="user-subject">
-                    <br><br>
-
-                    <!-- The Message Field -->
-                    <label for="user-message">Message:</label>
-                    <textarea id="user-message" name="user-message" rows="10" cols="30"></textarea>
-                    
-                    <br><br>
-                    <!-- The Submit Button -->
-                    <button type="submit">Submit</button>
-                </form>
-                <nav>
-                <ul>
-                    <li>
-                        You can also contact me on <a href="https://github.com/daydreambot" target="_blank">GitHub</a>
-                    </li>
-                    <li>
-                        or send me an <a href="mailto:elijahiyiolaworks@gmail.com" target="_blank">email</a>.
-                    </li>
-                </ul>
-                </nav>
-            </section>
-            <hr>
-        </main>
-
-        <footer>
-            &lt;&lt;&copy; 2026. Eniola. &gt;&gt;
-            <nav>
-                <a href="#">
-                    Back to Top
-                </a>
-            </nav>
-        </footer>
-    </body>
+    <footer>
+    <p>&lt;&lt; &copy; 2026. Eniola. &gt;&gt;</p>
+    <nav aria-label="Footer navigation">
+        <a href="#">Back to Top</a>
+    </nav>
+    </footer>
+</body>
 </html>

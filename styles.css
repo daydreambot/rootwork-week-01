@@ -1,7 +1,10 @@
 :root {
-    --bg-color: #eecccc;        /* Off-white background */
-    --text-color: #000000;      /* dark gray */
-    --accent-color: #0066cc;    /* blue for links and buttons */
+    --bg-color: #ffffff;        /* light pink background */
+    --text-color: #378cc5;      /* black text */
+    --accent-color: #0284c7; 
+    --main-text: #0f172a;
+    --button-color: #0066cc;
+
 
     /* Spacing */
     --spacing-md: 16px;
@@ -13,9 +16,72 @@ body {
     margin: var(--spacing-md);
     max-width: 1000px;
     margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;    
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+#Intro {
+    background-color: #f3f4f6;
+    border-color: #e5e7eb;
+    border-style: solid;
+    color: #1f2937;
+    display: grid;    
+    place-items: center;
+}
+
+#Skills {
+    display: grid;    
+    place-items: center;
+}
+
+h2 {
+    background-color: #f3f4f6;
+    border-color: #e5e7eb;
+    border-style: solid;
+    color: #1f2937;
+    display: grid;    
+    place-items: center;
 }
 
 button {
-    background-color: var(--accent-color);
+    background-color: var(--button-color);
+    color: white
 }
 
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+nav a {
+    background-color: var(--card-bg); 
+    color: var(--text-main);
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+.circle-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}

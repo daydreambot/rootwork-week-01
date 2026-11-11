@@ -1,8 +1,7 @@
 :root {
-    --bg-color: #ffffff;        /* light pink background */
-    --text-color: #378cc5;      /* black text */
+    --bg-color: #ffffff;        
+    --text-color: #378cc5;      
     --accent-color: #0284c7; 
-    --main-text: #0f172a;
     --button-color: #0066cc;
 
 
@@ -27,9 +26,6 @@ h1{
 }
 
 #Intro {
-    background-color: #f3f4f6;
-    border-color: #e5e7eb;
-    border-style: solid;
     color: #1f2937;
     display: grid;    
     place-items: center;
@@ -41,9 +37,10 @@ h1{
 }
 
 h2 {
-    background-color: #f3f4f6;
+    background: linear-gradient(135deg, #254d9e, #4a80e8);
     border-color: #e5e7eb;
-    border-style: solid;
+    padding: 10px 20px;
+    border-style: solid; 
     color: #1f2937;
     display: grid;    
     place-items: center;
@@ -63,10 +60,7 @@ nav{
 }
 
 nav a {
-    background-color: var(--card-bg); 
-    color: var(--text-main);
-    padding: 10px 20px;
-    border-radius: 25px;
+    
 }
 
 ul{
@@ -84,4 +78,21 @@ a {
     width: 300px;
     height: 300px;
     border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.nav-border {
+    border-color: #254d9e; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border-style: solid; 
+    background: linear-gradient(135deg, #254d9e, #4a80e8);
+}
+
+.nav-border:hover {
+    background: linear-gradient(135deg, #4a80e8, #254d9e);
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(37, 77, 158, 0.4);
 }

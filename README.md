@@ -26,19 +26,19 @@ The ones that do not require a closing tag are used to insert a single standalon
 ## WEEK 6 LEARNING CHECK
 
 ## When would you choose Flexbox instead of Grid?
-- 
+- Flexbox is good for arranging things up in either a single row or a single column ,it is used for simpler micro layouts like navigation buttons while CSS Grid is used to control both rows and columns at the same time and it is used for things like an overall page structure
 
 ## What does box-sizing: border-box change?
-- 
+- box-sizing: border-box help to keep the content within the specified measurement of the parent container. It makes sizing things more predictable.
 
 ## What is the difference between margin and padding?
-- 
+- padding is the space between the content and the border while margin is the space from the border to other outside elements.
 
 ## What does a media query do?
-- 
+- Media query attaches a conditional style to a webpage based on the size of the screen displaying it.  
 
 ## Why is max-width: 100% useful for images?
-- 
+- Using max-width:100% for images ensure that the images does not overflow beyond its container in case the container is too small for it.
 
 ## Mention one CSS behaviour from the videos that initially confused you and explain how you understand it now.
-- 
+- Flexbox and CSS Grid layouts initially confused me. How I understand it now is that Flexbox can be used to align very particular parts of a webpage like navigation or a single section and is one dimensional while Grid are used for elements like a parent container and is two dimensional.

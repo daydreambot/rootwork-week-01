@@ -42,3 +42,26 @@ The ones that do not require a closing tag are used to insert a single standalon
 
 ## Mention one CSS behaviour from the videos that initially confused you and explain how you understand it now.
 - Flexbox and CSS Grid layouts initially confused me. How I understand it now is that Flexbox can be used to align very particular parts of a webpage like navigation or a single section and is one dimensional while Grid are used for elements like a parent container and is two dimensional.
+
+==============
+
+## Design decision
+- I chose a light blue color as the main pallette to make the webpage pop.
+- I added a hover effect to the navigation at the top of the webpage and the submit button to make it look responsive and interactive when there is a cursor on it.
+- I added border around individual skills and individual projects in both Skills and Projects section respectively to make it standout in each of the section and separate it from other elements in the same card
+
+## Flexbox vs Grid
+- I used grid in body and main containers to stack the different sections inside them on each other using grid-template-columns: 1fr. I also used Grid for .three-columns container to and set it to create a row of card divided into four sections.
+- I used Grid inside the individual portfolio sections (#Intro, #Skills, #Projects) to align their internal elements using things like place-items: start and justify-items: center;
+- I used Flexbox for the nav element and centered the navigation links in a single row using justify-content: center and flex-wrap: wrap to force them to a new line if the display gets too small for them.
+
+## Responsive behaviour
+- In the desktop version of the webpage, the navigation links are centered in a single row but in the mobile version, the move to multiple lines depending on the display size
+- In the desktop version of the page, the cards in the skills and project sections are in a single row but in the media query, I stacked them on top of each other to have just one columns using grid-template-columns: 1fr
+
+## Hardest CSS problem
+- The hardest CSS problem I encountered was distinguishing between when to use Flexbox and CSS Grid. I fixed it by asking AI to explain the concept to me and break it down properly. I understand a bit better now but not fully.
+
+## AI disclosure
+- I used AI to explain various CSS syntaxes to me so I can understand how they work and what type of value they accept. I also used it to explain Flexbox and CSS Grid.
+- One suggestion I accepted was reducing the size of the width in .column item in order to get rid of the horizontal scrolling and the overflowing that was happening at specific display size and chrome tab size.

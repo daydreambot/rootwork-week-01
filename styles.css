@@ -53,7 +53,7 @@ h2 {
     padding: 24px;
     border-radius: 15px;
     border: 2px solid #1e40af;
-    width: 150px;
+    width: 120px;
     justify-items: center;
 }
 
@@ -224,5 +224,5 @@ footer {
         padding: 10px;
         gap: 0px;
     }
-    }
+}
 }

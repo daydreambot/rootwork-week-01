@@ -13,7 +13,7 @@ body {
     color: var(--text-color);
     font-family: system-ui, -apple-system, sans-serif;
     line-height: 1.6;
-    max-width: 700px;
+    max-width: 900px;
     margin: 20px auto;
     padding: 0 var(--spacing-md);
     display: grid;
@@ -32,37 +32,62 @@ h1 {
 
 h2 {
     background: linear-gradient(135deg, #254d9e, #4a80e8);
-    border: 2px solid var(--card-border);
+    border: 1px solid rgba(255, 255, 255, 0.45);
     border-radius: 8px;
     padding: 10px 20px;
     color: #ffffff;
     margin: 0 auto 10px auto;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#Projects > h2 {
+    border: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .three-columns {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 10px;
+    width: 100%;
+    align-items: stretch;
+}
+
+.skill-list,
+.project-grid {
+    margin-top: 0;
 }
 
 .column {
     background: var(--card-gradient);
     color: #ffffff;
     display: grid;
-    place-items: start;
-    padding: 24px;
-    border-radius: 15px;
-    border: 2px solid #1e40af;
-    width: 120px;
+    place-items: center;
+    padding: 18px 12px;
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    width: 100%;
+    min-height: 72px;
+    box-sizing: border-box;
     justify-items: center;
+    box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.15);
 }
 
-
-main {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 5px;
-    width: 100%;
+#Skills .column {
+    background: linear-gradient(135deg, #254d9e, #4a80e8);
 }
 
 /* Portfolio Section Cards */
@@ -78,6 +103,8 @@ main {
     padding: 24px;
     border-radius: 15px;
     border: 2px solid #1e40af;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #Intro {
@@ -85,10 +112,19 @@ main {
     text-align: center;
 }
 
-#Projects, #Skills {
-    align-items: center;
-    justify-items: center;    
+#Skills,
+#Projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: start;
+    justify-items: stretch;
 }
+
+#Skills > h2,
+#Projects > h2 {
+    width: 100%;
+}
+
 /* Navigation & Links */
 nav {
     display: flex;
@@ -99,7 +135,7 @@ nav {
     margin-top: 16px;
 }
 
-ul , ol {
+ul, ol {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -117,12 +153,79 @@ a {
     border-radius: 25px;
     background: linear-gradient(135deg, #254d9e, #4a80e8);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: inline-block;
+    text-align: center;
 }
 
 .nav-border:hover {
     background: linear-gradient(135deg, #4a80e8, #254d9e);
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(37, 77, 158, 0.4);
+}
+
+.nav-border:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 6px rgba(37, 77, 158, 0.35);
+}
+
+#Projects {
+    gap: 10px;
+    align-items: stretch;
+    justify-items: stretch;
+}
+
+#Projects .project-card {
+    background: var(--card-gradient);
+    border: 2px solid #1e40af;
+    border-radius: 15px;
+    width: 100%;
+    min-height: 160px;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+}
+
+#Projects .project-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 160px;
+    text-align: center;
+    color: #ffffff;
+    padding: 18px;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+#Projects .project-link h3,
+#Projects .project-link p {
+    margin: 0;
+    color: #ffffff;
+}
+
+#Projects .project-link h3 {
+    margin-bottom: 10px;
+}
+
+#Projects .project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(15, 23, 42, 0.22);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#Projects .project-link:hover {
+    background: linear-gradient(135deg, #4a80e8, #254d9e);
+    transform: scale(1.01);
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.15);
+    transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+#Projects .project-card:active,
+#Projects .project-link:active {
+    transform: translateY(-1px) scale(0.99);
+    box-shadow: 0 6px 12px rgba(15, 23, 42, 0.18);
 }
 
 /* Profile Picture */
@@ -212,17 +315,19 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .three-columns {
+    .three-columns,
+    #Projects {
         grid-template-columns: 1fr;
+    }
 
     nav {
         flex-direction: column;
         text-align: center;
         gap: 5px;
     }
+
     body {
         padding: 10px;
         gap: 0px;
     }
-}
 }

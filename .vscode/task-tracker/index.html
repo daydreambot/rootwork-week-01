@@ -12,16 +12,18 @@
     <body>
         <header>
             <h1>My Task Tracker</h1>
-            <p>Tasks remaining: <span id="remaining-tasks">0</span></p>
+            <p id="task-left">Tasks remaining: <span id="remaining-tasks">0</span></p>
         </header>
 
         <main>
             <!--Form to add tasks-->
             <form>
                 <label for="new-task">New task</label>
+                <div class="add-task">
                 <input type="text" placeholder="Add your new task..." id="new-task" name="new-task" required aria-describedby="error-message">
 
                 <button type="submit">Add</button>
+                </div>
             </form>
             <!--Error message-->
             <p id="error-message" class="error-text" role="alert">

@@ -16,4 +16,104 @@ main {
     padding: 20px;
     box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 
     0 8px 10px -6px rgba(0, 0, 0, 0.05);;
+    border-radius: 10px;
+}
+
+header, footer {
+    max-width: 500px;
+    font-size: large;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 94%;
+    padding: 20px;    
+}
+
+h1 {
+    background-color: white;
+    padding-left: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#task-left {
+    font-size: medium;
+    font-weight: 500;
+    color: #0fb1da;
+    background-color: white;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-block: 5px;
+}
+
+.add-task {
+    display: flex;
+    column-gap: 5px;
+    padding-block: 10px;
+    border-radius: 6px;
+    font-size: 50%;
+
+}
+
+label {
+    display: block;
+    margin: 0.5rem;
+    font-weight: bold;
+}
+
+input {
+    min-width: 0%;
+    max-width: fit-content;
+}
+
+.filters {
+    display: flex;
+    gap: 10px;
+}
+
+.filters button {
+    flex: 1;
+}
+
+.filter-btn {
+    background-color: #f1f5f9; 
+    border: 1px solid #cbd5e1; 
+    color: #475569;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 4px;
+    transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+}
+
+.filter-btn:hover {
+    background-color: #e2e8f0; 
+    border-color: #D1D5DB;
+    color: black;
+    font-weight: 600;
+}
+
+.filter-btn:active {
+    transform: scale(0.99); 
+    background-color: #047857;
+    color: white;
+    border-color: #047857;
+    font-weight: 700;
+}
+
+.active {
+    background-color: #047857;
+    color: white;
+    border-color: #047857;
+    font-weight: 700;
+}
+
+form button{
+    background-color: #047857;
+    color: white;
+    border-color: #047857;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-weight: 600;
 }

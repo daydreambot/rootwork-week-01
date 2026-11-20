@@ -68,6 +68,8 @@ label {
     display: block;
     margin: 0.5rem;
     font-weight: bold;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 input {
@@ -75,6 +77,50 @@ input {
     width: 100%;
     min-width: 0%;
     max-width: fit-content;
+    height: 40px;
+    padding: 5px;
+    font-size: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.form-sect {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-sect button {
+    height: 40px;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.12);
+}
+
+.form-sect button:hover {
+    background-color: #4daf93;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.18);
+}
+
+.form-sect button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+.filters button:hover {
+    background-color: #e2e8f0; 
+    border-color: #D1D5DB;
+    color: black;
+    font-weight: 600;
+    transform: scale(0.99);
 }
 
 .filters {
@@ -144,6 +190,61 @@ ul {
     gap: 5px;
     align-items: center;
     
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    row-gap: 10px;
+    cursor: pointer;
+
+}
+
+.task-text {
+    flex-grow: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.task-checkbox {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    accent-color: #047857;
+}
+
+.complete-task {
+    text-decoration: line-through;
+    color: #888888;
+    opacity: 0.7;
+}
+
+#empty-message {
+    color: #dc2626;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.empty-state {
+    text-align: center;       
+    color: #6b7280;
+    margin: 2px;
+    font-size: 16px;
+}
+
+.delete-btn {
+    flex-shrink: 0;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: #F47174;
+}
+
+.delete-btn:hover,
+.delete-btn:focus {
+    background-color: #dc2626;
 }
 
 @media (max-width: 375px) {

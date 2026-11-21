@@ -72,11 +72,10 @@ label {
     flex-shrink: 0;
 }
 
-input {
+#new-task {
     box-sizing: border-box;
     width: 100%;
     min-width: 0%;
-    max-width: fit-content;
     height: 40px;
     padding: 5px;
     font-size: 20px;
@@ -127,6 +126,7 @@ input {
     box-sizing: border-box;
     display: flex;
     gap: 10px;
+    margin-bottom: 15px;
 }
 
 .filters button {
@@ -195,8 +195,9 @@ ul {
 .task-item {
     display: flex;
     align-items: center;
-    row-gap: 10px;
+    gap: 10px;
     cursor: pointer;
+    width: 100%;
 
 }
 
@@ -224,7 +225,8 @@ ul {
     font-size: 14px;
     font-weight: 500;
     margin-top: 6px;
-    margin-bottom: 6px;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 .empty-state {

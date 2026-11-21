@@ -219,7 +219,7 @@ ul {
     opacity: 0.7;
 }
 
-#empty-message {
+#error-message {
     color: #dc2626;
     font-size: 14px;
     font-weight: 500;

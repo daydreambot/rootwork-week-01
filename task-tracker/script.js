@@ -89,10 +89,10 @@ function renderTasks() {
     })
 
         deleteBtn.addEventListener('click', () => {
-            tasks = tasks.filter((t) => t.id!==t.id);
+            tasks = tasks.filter((t) => t.id!==task.id);
             renderTasks();
         })
-
+        
     });
 
     
@@ -125,6 +125,17 @@ taskInput.value = '';
 
 });
 
+filterButtons.forEach((button) => button.addEventListener('click', ()=> {currentFilter = button.dataset.filter;
 
+    filterButtons.forEach((btn) => {
+        btn.classList.remove("active");
+        btn.setAttribute("aria-pressed", "false");
+    });
 
+    button.classList.add('active');
+    button.setAttribute("aria-pressed", "true");
 
+    renderTasks();
+}
+
+));

@@ -82,7 +82,20 @@ function renderTasks() {
 
         taskList.appendChild(li);
 
+        checkbox.addEventListener('change', () => {
+        
+        task.completed = !task.completed;
+        renderTasks();        
+    })
+
+        deleteBtn.addEventListener('click', () => {
+            tasks = tasks.filter((t) => t.id!==t.id);
+            renderTasks();
+        })
+
     });
+
+    
 };
 
 taskForm.addEventListener('submit', function(event) {

@@ -322,6 +322,10 @@ footer {
     border-top: 1px solid var(--card-border);
 }
 
+.menu-toggle {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .three-columns,
     #Projects {
@@ -332,10 +336,20 @@ footer {
         flex-direction: column;
         text-align: center;
         gap: 5px;
+        display: none;
+    }
+
+    nav.is-open {
+        display: flex;
+        flex-direction: column;
     }
 
     body {
         padding: 10px;
         gap: 16px;
+    }
+
+    .menu-toggle {
+    display: inline-block;
     }
 }

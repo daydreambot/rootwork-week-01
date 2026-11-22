@@ -1,11 +1,16 @@
 {
   "editor.quickSuggestions": {
-    "other": false,
+    "other": true,
     "comments": false,
-    "strings": false
+    "strings": true
   },
-  "editor.suggestOnTriggerCharacters": false,
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.suggestSelection": "first",
   "editor.inlineSuggest.enabled": false,
+  "html.suggest.html5": true,
+  "css.suggest.css24": true,
+  "javascript.suggest.enabled": true,
+  "javascript.suggest.paths": true,
   "cSpell.words": [
     "Eniola",
     "Iyiola",

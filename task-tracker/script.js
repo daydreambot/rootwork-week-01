@@ -18,7 +18,7 @@ function renderTasks() {
         filteredTasks = tasks.filter(task => task.completed === false);
         if (filteredTasks.length === 0) {
             emptyState.style.display = 'block';
-            emptyState.textContent = 'No tasks yet. Add one above to get started!';
+            emptyState.textContent = 'No more active tasks!';
         }
 
         else {

@@ -9,8 +9,8 @@
   "editor.inlineSuggest.enabled": false,
   "html.suggest.html5": true,
   "css.suggest.css24": true,
-  "javascript.suggest.enabled": true,
-  "javascript.suggest.paths": true,
+  "js/ts.suggest.enabled": true,
+  "js/ts.suggest.paths": true,
   "cSpell.words": [
     "Eniola",
     "Iyiola",

@@ -8,6 +8,14 @@
     --spacing-md: 16px;
 }
 
+body.dark-theme {
+    --bg-color: #0F172A;
+    --text-color: #F1F5F9;
+    --accent-color: #93C5FD;
+    --card-gradient: linear-gradient(155deg, #1E293B 0%, #334155 100%);
+    --card-border: #334155;
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -333,7 +341,23 @@ footer {
     display: none;
 }
 
-.menu-toggle:focus-visible {
+.theme {
+    border: 2px solid #254d9e;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #254d9e, #4a80e8);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-top: 16px;
+}
+
+.theme:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(37, 77, 158, 0.4);
+}
+
+.menu-toggle:focus-visible,
+.theme:focus-visible {
     background: linear-gradient(135deg, #4a80e8, #254d9e);
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(37, 77, 158, 0.4);

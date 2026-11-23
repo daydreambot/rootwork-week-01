@@ -5,6 +5,23 @@ const contactForm =document.getElementById('contact-form');
 const contactName = document.getElementById('user-name');
 const contactMail = document.getElementById('user-email');
 const contactMessage = document.getElementById('user-message');
+const theme = document.querySelector('.theme');
+
+if (theme) {
+    theme.addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme');
+
+    const isDark = document.body.classList.contains('dark-theme');
+    theme.setAttribute('aria-pressed', isDark);
+
+    if (isDark) {
+        theme.textContent = 'Light Mode';
+    } else {
+        theme.textContent = 'Dark Mode';
+    };
+    
+    });
+};
 
 if (menuToggle && nav) {
 

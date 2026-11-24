@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Iyiola Eniola">
+    <meta name="description" content="This is a webpage containing my developer profile">
+    <title>My Developer Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    </head>
+
+    <body>
+    <header>
+            <h1>Iyiola Elijah's Developer Profile</h1>
+    <img
+        class="circle-image"
+        src="img/profile-pic.jpeg"
+        alt="Iyiola Eniola profile picture"
+        title="My profile picture"
+        width="300"
+        height="300"
+    >
+
+    <button type="button" class='menu-toggle' aria-expanded="false" aria-controls="main-menu">Menu</button>
+    <button type="button" aria-pressed="false" class ='theme'>Dark Mode</button>
+    <nav aria-label="Main navigation" id="main-menu">
+        <a href="#Intro" class="nav-border">Introduction</a>
+        <a href="#Skills" class="nav-border">Skills</a>
+        <a href="#Projects" class="nav-border">Projects</a>
+        <a href="#Education" class="nav-border">Education</a>
+        <a href="#Contact" class="nav-border">Contact</a>
+    </nav>
+    </header>
+
+    <main>
+    <section id="Intro">
+        <h2>Introduction</h2>
+        <p>
+        Hi, my name is Iyiola Elijah, an aspiring Backend Engineer. Open to
+        internship opportunities.
+        </p>
+    </section>
+
+    <section id="Skills">
+        <h2>Skills</h2>
+        <ol class="three-columns skill-list">
+        <li class = "column">Python</li>
+        <li class = "column">JavaScript</li>
+        <li class = "column">HTML</li>
+        </ol>
+    </section>
+
+    <section id="Projects">
+        <h2>Projects</h2>
+        <div class="three-columns project-grid">
+            <article class="column project-card">
+                <a class="nav-border project-link" href="https://github.com/daydreambot/rootwork-week-01/tree/milestone/phase-1-task-manager" target="_blank" rel="noopener noreferrer">
+                <h3>Task Manager</h3>
+                <p>
+                    Javascript terminal-based task manager.
+                </p>
+                </a>
+            </article>
+
+            <article class = "column project-card">
+                <a class="nav-border project-link" href="https://github.com/daydreambot/python-learning-curve/blob/main/tests-taken/tic-tac-toe.py" target="_blank" rel="noopener noreferrer">
+                <h3>Tic Tac Toe</h3>
+                <p>
+                    This is a terminal-based Tic Tac Toe game using Python.
+                </p>
+                </a>
+            </article>
+
+            <article class = "column project-card">
+                <a class="nav-border project-link" href="https://github.com/daydreambot/mytodo" target="_blank" rel="noopener noreferrer">
+                <h3>To Do List API</h3>
+                <p>
+                    This is a Python-based to do list API.
+                </p>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section id="Education">
+        <h2>Education</h2>
+        <dl>
+        <dt>
+            Obafemi Awolowo University, Ile-Ife, Osun State, Nigeria
+        </dt>
+        <dd>
+            <strong>Bachelor of Science</strong>
+        </dd>
+        </dl>
+    </section>
+
+    <section id="Contact">
+        <h2>Contact</h2>
+        <form id="contact-form" novalidate>
+        <label for="user-name">Name:</label>
+        <input aria-describedby="name-error" type="text" id="user-name" name="user-name" required>
+        <span id ="name-error" class ='error-msg'></span>
+
+        <label for="user-email">Email:</label>
+        <input aria-describedby="email-error" type="email" id="user-email" name="user-email" required>
+        <span  id ='email-error' class ='error-msg'></span>
+
+        <label for="user-subject">Subject:</label>
+        <input type="text" id="user-subject" name="user-subject">
+
+        <label for="user-message">Message:</label>
+        <textarea
+            aria-describedby="message-error"
+            id="user-message"
+            name="user-message"
+            rows="6"
+            required
+        ></textarea>
+        
+        <span id="message-error" class ='error-msg'></span>
+
+        <button type="submit">Submit</button>
+        <span role="status" class ='status-msg'></span>
+        </form>
+
+        <div class="contact-links">
+        <ul>
+            <li>
+            You can also contact me on
+            <a
+                href="https://github.com/daydreambot"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+            >
+            or send me an
+            <a href="mailto:elijahiyiolaworks@gmail.com">email</a>.
+            </li>
+            
+        </ul>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+    <p>&lt;&lt; &copy; 2026. Eniola. &gt;&gt;</p>
+    <nav aria-label="Footer navigation">
+        <a href="#">Back to Top</a>
+    </nav>
+    </footer>
+</body>
+</html>

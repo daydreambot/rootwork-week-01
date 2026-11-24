@@ -1,9 +1,19 @@
 {
   "editor.quickSuggestions": {
-    "other": false,
+    "other": true,
     "comments": false,
-    "strings": false
+    "strings": true
   },
-  "editor.suggestOnTriggerCharacters": false,
-  "editor.inlineSuggest.enabled": false
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.suggestSelection": "first",
+  "editor.inlineSuggest.enabled": false,
+  "html.suggest.html5": true,
+  "css.suggest.css24": true,
+  "js/ts.suggest.enabled": true,
+  "js/ts.suggest.paths": true,
+  "cSpell.words": [
+    "Eniola",
+    "Iyiola",
+    "Rootwork"
+  ]
 }

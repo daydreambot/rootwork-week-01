@@ -26,8 +26,9 @@ body {
     padding: 0 var(--spacing-md);
     display: grid;
     justify-content: center;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 24px;
+    box-sizing: border-box;
 }
 
 header {
@@ -56,7 +57,7 @@ h2 {
 
 main {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 12px;
     width: 100%;
 }
@@ -113,6 +114,7 @@ section {
     border: 2px solid #1e40af;
     width: 100%;
     box-sizing: border-box;
+    grid-template-columns: minmax(0, 1fr);
 }
 
 #Intro {
@@ -170,6 +172,11 @@ a {
     background: linear-gradient(135deg, #4a80e8, #254d9e);
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(37, 77, 158, 0.4);
+}
+
+.nav-border:focus-visible {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 2px;
 }
 
 .nav-border:active {
@@ -256,6 +263,7 @@ a {
 form {
     width: 100%;
     max-width: 600px;
+    min-width: 0;
 }
 
 label {
@@ -337,8 +345,9 @@ footer {
     border-radius: 25px;
     background: linear-gradient(135deg, #254d9e, #4a80e8);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    margin-top: 16px;
+    margin: 16px 30px 0;
     display: none;
+    cursor: pointer;
 }
 
 .theme {
@@ -349,6 +358,7 @@ footer {
     background: linear-gradient(135deg, #254d9e, #4a80e8);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     margin-top: 16px;
+    cursor: pointer;
 }
 
 .theme:hover {
@@ -361,11 +371,13 @@ footer {
     background: linear-gradient(135deg, #4a80e8, #254d9e);
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(37, 77, 158, 0.4);
+    outline: 3px solid var(--accent-color);
+    outline-offset: 2px;
 }
 
 .error-msg,
 .status-msg {
-    display: inline-block;
+    display: block;
     margin-top: 0.5rem;
     padding: 0.45rem 0.85rem;
     border-radius: 6px;
@@ -373,7 +385,8 @@ footer {
     font-weight: 600;
     line-height: 1.4;
     max-width: 100%;
-    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
+    box-sizing: border-box;
 }
 
 .error-msg:empty,

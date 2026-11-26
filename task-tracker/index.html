@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Iyiola Eniola">
+        <meta name="description" content="This is a task tracker web page">
+        <title>TASK TRACKER</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>My Task Tracker</h1>
+            <p id="task-left">Tasks remaining: <span id="remaining-tasks">0</span></p>
+        </header>
+
+        <main>
+            <!--Form to add tasks-->
+            <form class="form-sect">
+                <label for="new-task">New task</label>
+                <div class="add-task">
+                <input type="text" placeholder="Add your new task..." id="new-task" name="new-task" aria-describedby="error-message">
+
+                <button type="submit">Add</button>
+                </div>
+            </form>
+            <!--Error message-->
+            <p id="error-message" class="error-text" role="alert">
+
+            </p>
+
+            <!--Filter buttons-->
+            <section class="filters" aria-label="Filter tasks">
+                <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+                <button type="button" class="filter-btn" data-filter="active" aria-pressed="false">Active</button>
+                <button type="button" class="filter-btn" data-filter="completed" aria-pressed="false">Completed</button>
+            </section>
+
+            <ul id="task-list" class="task-list" aria-label="Tasks">
+
+            </ul>
+
+            <p id="empty-state" class="empty-state" aria-live="polite">
+                No tasks yet. Add one above to get started!
+            </p>
+        </main>
+
+        <footer>
+            &lt;&lt; Eniola &gt;&gt; 
+        </footer>
+    </body>
+</html>
